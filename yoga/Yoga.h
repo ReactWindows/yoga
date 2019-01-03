@@ -153,22 +153,22 @@ WIN_EXPORT void YGNodeCopyStyle(
     const YGNodeRef dstNode,
     const YGNodeRef srcNode);
 
-void* YGNodeGetContext(YGNodeRef node);
-void YGNodeSetContext(YGNodeRef node, void* context);
-YGMeasureFunc YGNodeGetMeasureFunc(YGNodeRef node);
-void YGNodeSetMeasureFunc(YGNodeRef node, YGMeasureFunc measureFunc);
-YGBaselineFunc YGNodeGetBaselineFunc(YGNodeRef node);
-void YGNodeSetBaselineFunc(YGNodeRef node, YGBaselineFunc baselineFunc);
-YGDirtiedFunc YGNodeGetDirtiedFunc(YGNodeRef node);
-void YGNodeSetDirtiedFunc(YGNodeRef node, YGDirtiedFunc dirtiedFunc);
-YGPrintFunc YGNodeGetPrintFunc(YGNodeRef node);
-void YGNodeSetPrintFunc(YGNodeRef node, YGPrintFunc printFunc);
-bool YGNodeGetHasNewLayout(YGNodeRef node);
-void YGNodeSetHasNewLayout(YGNodeRef node, bool hasNewLayout);
-YGNodeType YGNodeGetNodeType(YGNodeRef node);
-void YGNodeSetNodeType(YGNodeRef node, YGNodeType nodeType);
-bool YGNodeIsDirty(YGNodeRef node);
-bool YGNodeLayoutGetDidUseLegacyFlag(const YGNodeRef node);
+WIN_EXPORT void* YGNodeGetContext(YGNodeRef node);
+WIN_EXPORT void YGNodeSetContext(YGNodeRef node, void* context);
+WIN_EXPORT YGMeasureFunc YGNodeGetMeasureFunc(YGNodeRef node);
+WIN_EXPORT void YGNodeSetMeasureFunc(YGNodeRef node, YGMeasureFunc measureFunc);
+WIN_EXPORT YGBaselineFunc YGNodeGetBaselineFunc(YGNodeRef node);
+WIN_EXPORT void YGNodeSetBaselineFunc(YGNodeRef node, YGBaselineFunc baselineFunc);
+WIN_EXPORT YGDirtiedFunc YGNodeGetDirtiedFunc(YGNodeRef node);
+WIN_EXPORT void YGNodeSetDirtiedFunc(YGNodeRef node, YGDirtiedFunc dirtiedFunc);
+WIN_EXPORT YGPrintFunc YGNodeGetPrintFunc(YGNodeRef node);
+WIN_EXPORT void YGNodeSetPrintFunc(YGNodeRef node, YGPrintFunc printFunc);
+WIN_EXPORT bool YGNodeGetHasNewLayout(YGNodeRef node);
+WIN_EXPORT void YGNodeSetHasNewLayout(YGNodeRef node, bool hasNewLayout);
+WIN_EXPORT YGNodeType YGNodeGetNodeType(YGNodeRef node);
+WIN_EXPORT void YGNodeSetNodeType(YGNodeRef node, YGNodeType nodeType);
+WIN_EXPORT bool YGNodeIsDirty(YGNodeRef node);
+WIN_EXPORT bool YGNodeLayoutGetDidUseLegacyFlag(const YGNodeRef node);
 
 WIN_EXPORT void YGNodeStyleSetDirection(
     const YGNodeRef node,

@@ -1,4 +1,4 @@
-﻿#pragma warning disable CS1587 // XML comment is not placed on a valid language element
+#pragma warning disable CS1587 // XML comment is not placed on a valid language element
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
@@ -11,11 +11,11 @@ namespace Facebook.Yoga
 {
     public static class YogaConstants
     {
-        public const float Undefined = float.NaN;
+        public const float Undefined = (float)10E20;
 
         public static bool IsUndefined(float value)
         {
-            return float.IsNaN(value);
+            return value >= (float)10E8 || value <= (float)-10E8;
         }
 
         public static bool IsUndefined(YogaValue value)
