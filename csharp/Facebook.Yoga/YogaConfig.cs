@@ -119,6 +119,19 @@ namespace Facebook.Yoga
             }
         }
 
+        public bool UseLegacyStretchBehaviour
+        {
+            get
+            {
+                return Native.YGConfigGetUseLegacyStretchBehaviour(_ygConfig);
+            }
+
+            set
+            {
+                Native.YGConfigSetUseLegacyStretchBehaviour(_ygConfig, value);
+            }
+        }
+
         public float PointScaleFactor
         {
             set
