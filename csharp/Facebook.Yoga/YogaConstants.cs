@@ -11,11 +11,11 @@ namespace Facebook.Yoga
 {
     public static class YogaConstants
     {
-        public const float Undefined = (float)10E20;
+        public const float Undefined = float.NaN;
 
         public static bool IsUndefined(float value)
         {
-            return value >= (float)10E8 || value <= (float)-10E8;
+            return float.IsNaN(value);
         }
 
         public static bool IsUndefined(YogaValue value)
